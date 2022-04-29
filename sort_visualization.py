@@ -26,7 +26,7 @@ def bubblesort(array):
                 array[j], array[j + 1] = array[j + 1], array[j]
                 show(array, screen)
             time.sleep(conf['sort.delay'])
-
+# Still trying to figure out how to visualize this thing :P
 def mergesort(array):
     if len(array) > 1:
         mid = len(array) // 2
@@ -53,7 +53,7 @@ def mergesort(array):
             array[k] = right[j]
             j += 1
             k += 1
-        time.sleep(conf['sort.delay'])
+
 def show(array, screen):
     screen.fill(conf['screen.bg_color'])
     for i in range(len(array)):
